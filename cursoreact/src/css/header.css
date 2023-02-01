@@ -1,0 +1,18 @@
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 100px;
+  width: 100%;
+  max-width: none;
+}
+
+.wrapper {
+  margin: 0;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+.wrapper p {
+  padding-top: 15%;
+}/*# sourceMappingURL=Header.css.map */
