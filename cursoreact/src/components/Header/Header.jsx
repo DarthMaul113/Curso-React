@@ -1,16 +1,12 @@
-import React from 'react'
+import {  Nav } from "react-bootstrap"
 import '../../css/header.css'
 
 function Header() {
     return (
         <header class="container">
             <div class="wrapper ">
-                <h1>La Tiendita del Cachito</h1>
+                <h1><Nav.Link href="/" >La Tiendita del Cachito</Nav.Link></h1>
             </div>
-            <div class="wrapper ">
-                <p>¡Bienvenido a la tiendita de todos los michis!</p>
-            </div>
-            
         </header>
     )
 }

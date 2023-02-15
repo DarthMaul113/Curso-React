@@ -1,4 +1,7 @@
-.nav-wrapper #nav-mobile {
-  display: flex;
-  flex-direction: row-reverse;
+.navbar {
+  font-family: "Fira Sans" !important;
+}
+
+.navbar-brand {
+  margin-right: 0px !important;
 }/*# sourceMappingURL=Navbar.css.map */
