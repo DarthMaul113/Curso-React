@@ -21,7 +21,7 @@ const CartContainer = () => {
         order.buyer = formData
         order.isActive = true
         order.items = cartList.map(({ id, name, price }) => ({ id, name, price }))
-        order.total = 6500
+        order.total = precioTotal()
 
 
         //Firestore

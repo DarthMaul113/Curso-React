@@ -30,7 +30,11 @@ const ItemDetail = ({ product }) => {
                             <p className="info">Precio: {new Intl.NumberFormat('es-CL', { style: 'currency', currency: 'CLP' }).format(product.price)}</p>
                         </div>
                     </div>
+                    <div>
+                        <p>{product.description}</p>
+                    </div>
                 </div>
+
                 {isCount ?
                     <ItemCount initial={1} stock={10} onAdd={onAdd} />
                     :
