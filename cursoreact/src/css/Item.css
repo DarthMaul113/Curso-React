@@ -4,8 +4,6 @@
   margin: 1rem !important;
   padding: 1rem !important;
   border-radius: 0% !important;
-  font-family: "Fira Sans" !important;
-  background-color: #eee !important;
 }
 .card .card-header {
   background-color: #eee !important;
@@ -14,4 +12,4 @@
   margin: 0;
   padding: 0;
   text-transform: capitalize;
-}/*# sourceMappingURL=ItemDetailContainer.css.map */
+}/*# sourceMappingURL=Item.css.map */

@@ -1,0 +1,11 @@
+@import "../../scss/globalCards.scss";
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.cartbtns{
+    width: 100%;
+}

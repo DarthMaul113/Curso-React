@@ -4,18 +4,10 @@ div {
 
 h2,
 h5 {
+  color: #eee !important;
   font-family: "Fira Sans" !important;
 }
 
 .item-container {
-  background-color: #eee !important;
-}
-
-div .card {
-  margin: 1rem !important;
-  padding: 1rem !important;
-  border-radius: 0% !important;
-}
-div .card .card-header {
   background-color: #eee !important;
 }/*# sourceMappingURL=ItemListContainer.css.map */

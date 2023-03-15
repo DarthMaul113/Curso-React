@@ -3,6 +3,7 @@ import CartWidget from '../CartWidget/CartWidget';
 import '../../css/Navbar.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCat } from "@fortawesome/free-solid-svg-icons";
+import ItemCount from "../ItemCount/ItemCount"
 
 function NavBar() {
   return (
@@ -22,8 +23,8 @@ function NavBar() {
               </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link href="/cart">
-                <CartWidget />
+              <Nav.Link href="/cart" >
+                <CartWidget/>
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

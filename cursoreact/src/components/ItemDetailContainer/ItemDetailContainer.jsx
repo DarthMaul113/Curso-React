@@ -1,24 +1,36 @@
+import { doc, getDoc, getFirestore } from "firebase/firestore"
+import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import ItemDetail from "../ItemDetail/ItemDetail"
+
+
 import "../../css/ItemDetailContainer.css"
-import ItemCount from "../ItemCount/ItemCount"
 
 
-const ItemDetailContainer = () => {
-
+const ItemDetailConainer = () => {
+    const [product, setProduct] = useState({})
+    const [loading, setLoading] = useState(true)
     const { idProducto } = useParams()
 
+
+    useEffect(()=>{
+        const firedb = getFirestore()
+        const queryDoc = doc(firedb, 'productos', idProducto)
+        getDoc(queryDoc)
+        .then(respProd => setProduct(  { id: respProd.id, ...respProd.data() }  ))
+        .catch(err => console.error(err))
+        .finally(()=> setLoading(false))
+    },[])
+
+
     return (
-        <div className="d-flex pt-4 d-flex justify-content-evenly">
-            <div className="card w-25 mt-3">
-                <div className="card-body">
-                    ItemDetailContainer id: {idProducto}
-                </div>
-            </div>
-            <ItemCount inital={1} stock={10} onAdd={()=>{}} />
-
-        </div>
-
+        <>
+            {loading ?
+                <h2 className="mt-2">Cargando ...</h2>
+                :
+                <ItemDetail product={product} />}
+        </>
     )
 }
 
-export default ItemDetailContainer
+export default ItemDetailConainer

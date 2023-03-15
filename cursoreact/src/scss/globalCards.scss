@@ -1,0 +1,21 @@
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem !important;
+    padding: 1rem !important;
+    border-radius: 0% !important;
+    font-family: "Fira Sans" !important;
+    background-color: #eee !important;
+
+    .card-header {
+        background-color: #eee !important;
+    }
+
+    .card-body {
+        .info {
+            margin: 0;
+            padding: 0;
+            text-transform: capitalize;
+        }
+    }
+}

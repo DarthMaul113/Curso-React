@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../components/ItemDetailContainer/ItemDetailContainer.scss"],"names":[],"mappings":"AAAA;EACI;EACA","file":"ItemDetailContainer.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/globalCards.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;;AAIA;EACI;EACA;EACA","file":"ItemDetailContainer.css"}
